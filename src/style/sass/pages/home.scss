@@ -1,0 +1,46 @@
+@import '../variables';
+
+.home-container {
+  background: url('../../public/images/secondary-bg.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: $full-screen-height;
+  width: $full-width;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-content {
+  text-align: center;
+  color: $text-primary-color;
+  > h2 {
+    font-size: $subtitle;
+    margin-bottom: $margin-bottom;
+  }
+  > h1 {
+    font-size: $title;
+  }
+}
+
+.home-links {
+  ul {
+    margin-top: $margin-top;
+    list-style: none;
+    li {
+      padding: $default-padding;
+      font-size: 18px;
+      display: inline-block;
+      a {
+        color: $text-primary-color;
+        border-bottom: transparent 2px solid;
+        transition: $default-transition;
+        text-decoration: none;
+      }      
+      a:hover {
+        border-bottom: $text-primary-color 2px solid;
+        cursor: pointer;
+      }
+    }
+  }
+}

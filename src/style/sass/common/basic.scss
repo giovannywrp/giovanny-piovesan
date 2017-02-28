@@ -1,0 +1,9 @@
+@import '../variables';
+
+body {
+  font-family: $font-stack;
+  font-size: $font-size;
+  line-height: $line-height !important;  
+  background: $bg-color;
+  margin: 0 auto;
+}
